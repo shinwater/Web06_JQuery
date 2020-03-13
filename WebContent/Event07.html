@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+   
+        $(function() {
+          $(".site").change(function(){
+            $(".txt").text($(this).val());
+          });
+        });
+</script>
+</head>
+<body>
+    <!--
+        기타 자주 사용되는 이벤트메서드
+        - change() : 선택한 입력요소에 값이 새 값으로 바뀌고 포커스가 다른 요소로
+                    이동 되었을 때 이벤트가 발생.
+    -->
+    <select class="site">
+        <option value="www.naver.com">네이버</option>
+        <option value="www.nate.com">네이트</option>
+        <option value="www.daum.net">다음</option>
+        <option value="www.google.com">구글</option>
+
+    </select>
+    <p class="txt"></p>
+</body>
+</html>

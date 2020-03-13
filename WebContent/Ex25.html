@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        /*
+        - insertBefore() : 선택한 요소의 이전 위치에 새 요소를 추가.
+            형식) $("새 요소").insertBefore("요소선택");
+        - insertAfter() : 선택한 요소의 다음 위치에 새 요소를 추가.
+            형식) $("새 요소").insertAfter("요소선택");
+        - clone() : 선택한 문서 객체를 복사.
+                    true: 하위 요소까지 모두 복제.
+                    false: 선택한 요소만 복사.
+            형식) $("요소 선택").clone(true or false);
+        */
+
+        $(function(){
+            $("<li>새로운 내용 추가1</li>").insertBefore(".myList");
+            $("<li>새로운 내용 추가2</li>").insertAfter(".myList");
+            let my_clone = $(".myList").clone(true);
+            $(my_clone).insertAfter(".myList");
+        });
+
+
+    </script>
+</head>
+<body>
+    <h1>객체 편집 메서드</h1>
+    <ul>
+        <li class="myList">내용</li>
+    </ul>
+</body>
+</html>

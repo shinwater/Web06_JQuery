@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      // focus() :선택한 요소에 포커스가 생성되었을 때 이벤트 발생
+      // 형식) $("요소선택").focus(function() {...});
+      // blur() : 선택한 요소에서 포커스가 다른 요소로 이동되었을 때 이벤트 발생
+      // 형식) $("요소선택").blur(function() {...});
+
+      $(function(){
+          $("#user_name").focus(); //강제로 포커스를 발생
+          $("#user_id").focus(function() {
+            $(this).val("");
+          });
+          $("#user_id").blur(function() {
+            $(this).val("아이디 입력");
+          });
+      });
+    </script>
+</head>
+<body>
+    <!--
+        2.포커스 이벤트
+            - focus()
+            - focusin() : 선택된 요소에 포커스가 생성되었을 때 이벤트 발생.
+            - focusout() : 선택된 요소에 포커스가 다른 요소로 이동되었을 때 이벤트가 발생.
+            - blur()
+    -->
+    <p>
+        <input type="text" name="user_name" id="user_name">
+    </p>
+    <p>
+        <input type="text" name="user_id" id="user_id" value="아이디입력!">
+    </p>    
+</body>
+</html>

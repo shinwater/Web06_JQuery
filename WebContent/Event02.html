@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        //mouseout()
+        // 형식) $("요소선택").mouseout(function(){ ... });
+        //mouseover()
+        // 형식) $("요소선택").mouseover(function(){ ... });
+        //hover()
+        // 형식) $("요소선택").hover(
+        //                 function(){ 실행문1 }), ==> 마우스가 올라갔을 때 실행문1
+        //                 function(){ 실행문2 }); ==> 마우스가 벗어날 때 실행문2
+    $(function (){
+        $(".btn1").mouseover(function () {
+           $("p").css("background-color","hotpink"); 
+        });
+        $(".btn1").mouseout(function () {
+           $("p").css("background-color","lightgray"); 
+        });
+        $(".btn2").hover( 
+            //마우스가 버튼에 올라갔을 때 이벤트 실행
+            function () {$("p").css("border","1px solid tomato"); 
+            },
+            //마우스가 버튼을 벗어났을 때 이벤트 실행
+            function () {$("p").css("background-color","lightgray"); 
+            
+        });
+    });
+    </script>
+</head>
+<body>
+    <button class="btn1">mouseover/out</button>
+    <button class="btn2">hover</button>
+    <br/><br/><br/>
+
+    <p>내용~~~~</p>
+</body>
+</html>

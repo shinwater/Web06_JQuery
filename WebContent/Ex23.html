@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+
+    //before() :선택한 요소 이전 위치에 새 요소를 추가
+    // 형식) $("요소선택").before("새 요소")
+
+    //after() : 선택한 요소 다음 위치에 새 요소를 추가.
+    // 형식) $("요소선택").after("새 요소")
+
+    $(function(){
+        $(".myList").before("<li>새로운 내용 추가1</li>");
+        $(".myList").after("<li>새로운 내용 추가2</li>");
+
+    });
+    </script>
+</head>
+<body>
+    <!--
+        객체 편집 메서드
+        - 선택한 요소를 복제하거나 새 요소를 생성하는 메서드들에 대해서 학습.
+        - 복제하거나 새로 생성한 요소를 의도한 위치에 삽입하고 선택한 요소를 삭제하는 기능
+
+        객체편잡 메서드의 종류
+        - before()
+        - after()
+        - append()
+        - appendTo()
+        - prependTo()
+        - insertBefore()
+        - insertAfter()
+        - clone()
+        - empty()
+        - remove()
+        - replaceAll()
+        - replaceWith()
+    -->
+
+    <h1>객체 편집 메서드</h1>
+    <ul>
+        <li class="myList">내용</li>
+    </ul>
+</body>
+</html>

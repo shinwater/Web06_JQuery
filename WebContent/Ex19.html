@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        /*
+        - css("속성") / css("속성=값") 
+                : 선택한 요소에 지정한 스타일 속성값을 불러오거나 변환할 때 사용
+        */
+
+        $(function(){
+            //h1태그의 스타일에 color 속성 값을 p택그에 추가하라
+
+            $("p").text($("h1").css("color"));
+            $("h2").css("color","red");
+        });
+    </script>
+</head>
+<body>
+    <h1 style="color:blue;">객체 조작 및 생성</h1>
+    <p></p>
+    <h2>css메서드</h2>
+</body>
+</html>

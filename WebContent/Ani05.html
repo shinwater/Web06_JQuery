@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+
+         /* 
+        slideUp : 선택한 요소를  숨길 때 사용
+        형식) $("요소 선택").slideUp("효과속도")
+        slideDown : 선택한 요소를 드러낼 때 사용
+        형식) $("요소 선택").slideDown("효과속도")       
+        slideToggle : 선택한 요소를 숨기거나 드러낼 때 사용
+        형식) $("요소 선택").slideToggle("효과속도")       
+         */
+
+         $(function(){
+            $(".btn1").click(function(){
+                $("h2").slideUp()
+                });
+            $(".btn2").click(function(){
+                $("h2").slideDown()
+                });
+            $(".btn3").click(function(){
+                $("h2").slideToggle()
+                });
+         });
+    </script>
+    <style type="text/css">
+        h2{
+            width: 300px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn1">slideUp</button>
+    <button class="btn2">slideDown</button>
+    <button class="btn3">slideToggle</button>
+
+    <h2>효과 관련내용</h2>
+</body>
+</html>

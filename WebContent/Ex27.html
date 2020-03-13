@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+
+        //replaceAll()
+        //형식) $("새요소").replaceAll("요소선택");
+        //replaceWith()
+        //형식) $("요소선택").replaceWith("새요소");
+        $(function(){
+            $("h2").replaceWith("<h3>Replace Method</h3>");
+            $("<h4>내용4</h4>").replaceAll("p");
+
+        });
+    </script>
+</head>
+<body>
+    <h2>교체 메섣,</h2>
+    <p>냉ㅇ1</p>
+    <p>냉ㅇ2</p>
+</body>
+</html>

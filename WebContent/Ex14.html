@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        /*
+        5. 전체 요소 중 특정 숫자 번째 요소만 선택
+            형식) $("요소 선택:nth-child(숫자)")
+        6. 전체 요소 중 특정 숫자 배수번째의 요소만 선택
+            형식) $("요소 선택:nth-child(숫자n)")
+        */
+       $(function(){
+           $("li:nth-child(3)").css("color","tomato");
+           $("li:nth-child(2n)").css("background-color","yellow");
+       });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>탐색 선택자</h2>
+    <ul>
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+        <li>내용6</li>
+        <li>내용7</li>
+        <li>내용8</li>
+        <li>내용9</li>
+        <li>내용10</li>
+        
+    </ul>
+</body>
+</html>

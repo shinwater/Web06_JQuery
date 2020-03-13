@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      //fadeIn() : 숨겨져 있던 요소가 점점 투명해지면서 노출이 되는 기능
+      // 형식) $("요소 선택").fadeIn("효과속도", 콜백함수);
+      //fadeOut() : 노출이 되어있던 요소가 점점 사라지는 기능
+      // 형식) $("요소 선택").fadeOut("효과속도", 콜백함수);
+      //fadeToggle() : 노출되어 있던 요소는 점점 사라지고,
+      //                사라져 있던 요소는 선명해지면서 노출이 되는기능.
+      // 형식) $("요소 선택").fadeToggle("효과속도", 콜백함수);
+
+      $(function() {
+        $(".btn1").click(function(){
+            $("h2").fadeOut(1000);
+        });
+        $(".btn2").click(function(){
+            $("h2").fadeIn(1000);
+        });
+        $(".btn3").click(function(){
+            $("h2").fadeToggle(1000);
+        });
+      });
+    </script>
+</head>
+<body>
+    <button class="btn1">fadeOut</button>
+    <button class="btn2">fadeIn</button>
+    <button class="btn3">fadeToggle</button>
+
+    <h2>효과 관련 내용</h2>
+
+</body>
+</html>

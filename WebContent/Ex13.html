@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        /*
+        3. 짝수 번째(홀수 인덱스) 요소 선택 : 전체 요소 중에서 짝수번째(홀수 인덱스) 요소만 선택.
+            형식) $("요소 선택:odd")
+        4. 홀수 번째(짝수 인덱스) 요소 선택 : 전체 요소 중에서 홀수번째(짝수 인덱스) 요소만 선택.
+            형식) $("요소 선택:even")
+        */
+        $(function(){
+            $(".menu li:even").css("background-color","tomato");
+            $(".menu li:odd").css("background-color","lightgray");
+
+        });
+    </script>
+</head>
+<body>
+    <h2>탐색 선택자</h2>
+    <ul class="menu">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+        <li>내용6</li>
+        <li>내용7</li>
+        <li>내용8</li>
+        <li>내용9</li>
+        <li>내용10</li>
+        
+    </ul>
+</body>
+</html>

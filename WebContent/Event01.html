@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        //click() : 선택한 요소를 클릭했을 때 이벤트를 발생
+        // 형식) $("요소선택").click(function() {...});
+        //dblclick() : 선택한 요소를 더블클릭했을 때 이벤트를 발생
+        // 형식) $("요소선택").dbclick(function() {...});
+        $(function(){
+            $(".btn1").click(function(){
+                $("p").css("background-color","yellow");
+
+            });
+            $(".btn2").dblclick(function(){
+                $("p").css("border","1px solid red");
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--
+
+        제이쿼리 이벤트
+        1. 마우스 이벤트
+        2. 포커스 이벤트
+        3. 키보드 이벤트
+    -->
+    <!--
+        1. 마우스 이벤트
+            - click()
+            - dblclick()
+            - mouseout()
+            - mouseover()
+            - hover()
+            - mousedown() : 선택한 요소에서 마우스 버튼을 눌렀을 때 이벤트 발생.
+            - mouseup() : 선택한 요소에서 마우스 버튼을 눌렀다가 떼었을 때 이벤트 발생.
+            - mouseenter()
+            - mouseleave()
+            - mousemove()
+    -->
+
+    <button class="btn1">click</button>
+    <button class="btn2">dblclick</button>
+    <br/><br/><br/>
+
+    <p>내용~~~~</p>
+</body>
+</html>

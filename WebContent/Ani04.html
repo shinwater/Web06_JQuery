@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        //fadeTo() : 선택한 요소를 지정한 투명도의 값까지만 숨기는 기능.
+        //              투명도는 0부터 1까지 입력을 할수 이;ㅆ음.
+        // 형식) $("요소선택").fadeTO("효과 속도", 투명도, 콜백함수);
+
+        $(function () {
+            $(".btn1").click(function(){
+                $("h2").fadeTo(1000,0.25);
+            });  
+            $(".btn2").click(function(){
+                $("h2").fadeTo(1000,0.50);
+            });
+            $(".btn3").click(function(){
+                $("h2").fadeTo(1000,0.75);
+            });
+            $(".btn4").click(function(){
+                $("h2").fadeTo(1000,1);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <button class="btn1">투명도(25%)</button>
+    <button class="btn2">투명도(50%)</button>
+    <button class="btn3">투명도(75%)</button>
+    <button class="btn4">투명도(100%)</button>
+
+    <h2>효과 관련내용</h2>
+</body>
+</html>
